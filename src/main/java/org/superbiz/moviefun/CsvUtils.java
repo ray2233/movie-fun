@@ -16,7 +16,7 @@ public class CsvUtils {
         try {
             ClassLoader cl = CsvUtils.class.getClassLoader();
             Scanner scanner = new Scanner(cl.getResourceAsStream(path)).useDelimiter("\\A");
-            
+
             if (scanner.hasNext()) {
                 return scanner.next();
             } else {
