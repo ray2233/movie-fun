@@ -42,7 +42,7 @@ public class MoviesBean {
 
     @Transactional
     public void addMovie(Movie movie) {
-        logger.error("Creating movie with title ${title}, and year ${year}", movie.getTitle(), movie.getYear());
+        logger.error("Creating movie with title {}, and year {}", movie.getTitle(), movie.getYear());
 
         entityManager.persist(movie);
     }
